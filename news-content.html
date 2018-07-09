@@ -1,0 +1,258 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta charset="utf-8">
+  
+  <title>Loader placholder</title>
+  
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <style type="text/css">
+  @-webkit-keyframes placeHolderShimmer {
+    0% {
+      background-position: -468px 0
+    }
+
+    100% {
+      background-position: 468px 0
+    }
+  }
+
+  @keyframes placeHolderShimmer {
+    0% {
+      background-position: -468px 0
+    }
+
+    100% {
+      background-position: 468px 0
+    }
+  }
+
+  .timeline-wrapper {
+    color: #141823;
+    padding-top: 140px;
+  }
+
+  /*changes*/
+  .timeline-item-content {
+    background: #fff;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 3px;
+    /*padding: 12px;*/
+    margin: 0 auto;
+    /*max-width: 472px;*/
+    min-height: 200px;
+  }
+
+  .cardTitle {
+    position: absolute;
+    margin-top: -31px;
+    /* padding-left: 35px; */
+    /* padding-right: 35px; */
+    /* padding-bottom: 6px; */
+    /* padding-top: 3px; */
+    background-color: #666869;
+    color: white;
+    font-size: 1.8em;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1;
+    text-transform: uppercase;
+    right: -13px;
+    width: 44%;
+    height: 28%;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+  }
+
+  .pic-background-content {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    height: 300px;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .animated-background {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: placeHolderShimmer;
+    animation-name: placeHolderShimmer;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: #eeeeee;
+    background: -webkit-gradient(linear, left top, right top, color-stop(8%, #eeeeee), color-stop(18%, #dddddd), color-stop(33%, #eeeeee));
+    background: -webkit-linear-gradient(left, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    -webkit-background-size: 800px 104px;
+    background-size: 800px 104px;
+    height: 96px;
+    position: relative;
+    margin: 12px;
+  }
+
+  .background-masker-content {
+    background: #fff;
+    position: absolute;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .outlined .background-masker-content {
+    border: 1px solid #ddd;
+  }
+
+  .outlined:hover .background-masker-content {
+    border: none;
+  }
+
+  .outlined:hover .background-masker-content:hover {
+    border: 1px solid #ccc;
+    z-index: 1;
+  }
+
+  .background-masker-content.header-top, .background-masker-content.header-bottom, .background-masker-content.subheader-bottom {
+    top: 0;
+    left: 40px;
+    right: 0;
+    height: 10px;
+  }
+
+  .background-masker-content.header-left, .background-masker-content.subheader-left, .background-masker-content.header-right, .background-masker-content.subheader-right {
+    top: 10px;
+    left: 40px;
+    height: 8px;
+    width: 10px;
+  }
+
+  .background-masker-content.header-bottom {
+    top: 18px;
+    height: 6px;
+  }
+
+  .background-masker-content.subheader-left, .background-masker-content.subheader-right {
+    top: 24px;
+    height: 6px;
+  }
+
+  .background-masker-content.header-right, .background-masker-content.subheader-right {
+    width: auto;
+    left: 300px;
+    right: 0;
+  }
+
+  .background-masker-content.subheader-right {
+    left: 230px;
+  }
+
+  .background-masker-content.subheader-bottom {
+    top: 30px;
+    height: 10px;
+  }
+
+  .background-masker-content.content-top, .background-masker-content.content-second-line, .background-masker-content.content-third-line, .background-masker-content.content-second-end, .background-masker-content.content-third-end, .background-masker-content.content-first-end {
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 6px;
+  }
+
+  .background-masker-content.content-top {
+    height: 20px;
+  }
+
+  /*changes*/
+  .background-masker-content.content-first-end, .background-masker-content.content-second-end, .background-masker-content.content-third-end {
+    width: auto;
+    left: 380px;
+    right: auto;
+    top: 60px;
+    height: 8px;
+  }
+
+  .background-masker-content.content-second-line {
+    top: 68px;
+  }
+
+  .background-masker-content.content-second-end {
+    left: 420px;
+    top: 74px;
+  }
+
+  .background-masker-content.content-third-line {
+    top: 82px;
+  }
+
+  .background-masker-content.content-third-end {
+    left: 300px;
+    top: 88px;
+  }
+  
+</style>
+</head>
+<body>
+
+<div class="content-placeholder container">
+  <div class="row">
+
+    <div class="col-md-10">
+      <div class="timeline-wrapper">
+        <div class="timeline-item-content">
+        <div class="pic-background-content">
+          </div>
+          <div class="animated-background">            
+            <div class="background-masker-content header-top">
+            </div>
+            <div class="background-masker-content header-left">
+            </div>
+            <div class="background-masker-content header-right">
+            </div>
+            <div class="background-masker-content header-bottom">
+            </div>
+            <div class="background-masker-content subheader-left">
+            </div>
+            <div class="background-masker-content subheader-right">
+            </div>
+            <div class="background-masker-content subheader-bottom">
+            </div>
+            <div class="background-masker-content content-top">
+            </div>
+            <div class="background-masker-content content-first-end">
+            </div>
+            <div class="background-masker-content content-second-line">
+            </div>
+            <div class="background-masker-content content-second-end">
+            </div>
+            <div class="background-masker-content content-third-line">
+            </div>
+            <div class="background-masker-content content-third-end">
+            </div>
+			
+			
+          </div>
+          
+        </div>
+      </div>
+    </div>  
+	
+  </div>
+</div>
+
+  
+
+  <script src="js/jquery.min.js" type="text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="text/javascript"></script>
+</body>
+</html>
